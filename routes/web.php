@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\Portafolio;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\correo;
+use App\Http\Controllers\CorreoController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -27,3 +31,5 @@ Route::get('/proyectos', function () {
 
     return view('proyectos' , ['info' => $info]);
 })->name('proyectos');
+
+Route::post('/contacto', [CorreoController::class,'Enviar'])->name('contacto');

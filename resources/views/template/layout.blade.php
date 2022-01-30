@@ -152,7 +152,8 @@
           <div class="form">
             <div id="sendmessage">Su mensaje fue enviado correctamente. Gracias!</div>
             <div id="errormessage"></div>
-            <form action="" method="post" role="form" class="contactForm">
+            <form action="{{route('contacto')}}" method="post" role="form" class="contactForm">
+              @csrf
               <div class="form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Su Nombre" data-rule="minlen:4" data-msg="Ingrese mas de 4 caracteres" />
                 <div class="validation"></div>
@@ -195,8 +196,6 @@
 
   <!-- Template Specisifc Custom Javascript File -->
   <script src="js/custom.js"></script>
-
-  <script src="contactform/contactform.js"></script>
 
 
 </body>
