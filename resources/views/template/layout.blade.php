@@ -170,7 +170,7 @@
                 <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Mensaje"></textarea>
                 <div class="validation"></div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
             </form>
           </div>
         </div>
